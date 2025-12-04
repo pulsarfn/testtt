@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Redirigiendo...</title>
-    <meta http-equiv="refresh" content="0; url=https://gooogle.com">
+
+    <!-- Método 1: Redirección automática con meta refresh -->
+    <meta http-equiv="refresh" content="0; url=https://google.com">
+
+    <!-- Método 3: Redirección automática con JavaScript (backup) -->
+    <script>
+        setTimeout(() => {
+            window.location.replace("https://google.com");
+        }, 500); // 0.5 segundos después por si el meta no funciona
+    </script>
 </head>
 <body>
     <p>Redirigiendo...</p>
+
+    <!-- Método 2: Botón manual -->
+    <button onclick="window.location.href='https://google.com'">
+        Ir a Google
+    </button>
 </body>
 </html>
